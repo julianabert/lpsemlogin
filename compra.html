@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinephile</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <main>
+        <h1>Cine<span>phile</span></h1>
+        <section id="cartaz">
+            <h2>Em cartaz</h2>
+            <img src="img/challengers.jpg" alt="Challengers" class="cartazes film">
+            <img src="img/barbie.jpg" alt="Barbie" class="cartazes film">
+            <img src="img/kung fu.jpg" alt="Kung Fu Panda 4" class="cartazes film">
+            <img src="img/duna2.jpg" alt="Duna 2" class="cartazes film">
+        </section>
+
+        <section id="formulario">
+            <form name="cinema" action="">
+                <h2 id="titulo"><output id="nomefilme">Challengers</output></h2> <br>
+                <label for="filme">Selecione aqui</label>
+                <select name="filme" id="filme" onchange="trocaFilme()">
+                    <option value="c">Challengers</option>
+                    <option value="b">Barbie</option>
+                    <option value="k">Kung Fu panda 4</option>
+                    <option value="d">Duna 2</option>
+                </select> <br> <br>
+
+                <label for="dias">Dia da Sessão: </label>
+                <select name="dias" id="dias">
+                    <option value="Segunda-feira">Segunda-feira</option>
+                    <option value="Terça-feira">Terça-feira</option>
+                    <option value="Quarta-feira">Quarta-feira</option>
+                    <option value="Quinta-feira">Quinta-feira</option>
+                    <option value="Sexta-feira">Sexta-feira</option>
+                    <option value="Sábado">Sábado</option>
+                    <option value="Domingo">Domingo</option>
+                </select>
+
+                <label for="hora">Horário</label>
+               <select name="hora" id="hora">
+                <option value="13h">13h - 14:30h</option>
+                <option value="14:30h">14:30h - 16h</option>
+                <option value="16h">16h - 17:30h</option>
+                <option value="17:30h">17:30h - 19h</option>
+                <option value="19h">19h - 20:30h</option>
+               </select> <br> <br>
+
+                <label for="ing">Ingressos</label>
+                <input type="checkbox" name="kitkat" onchange="ing(15, this.checked)" id="uming"> 1 Ingresso
+                <input type="checkbox" name="snickers" onchange="ing(30, this.checked)" id="doising"> 2 Ingressos
+                <input type="checkbox" name="mem" onchange="ing(45, this.checked)" id="tresing"> 3 Ingressos
+                <br> <br>
+
+                <h3>Acompanhamentos</h3> <br>
+
+                <label for="pipoca">Pipoca: </label>
+                <select name="pipoca" id="pipoca" onchange="pipocavalor()">
+                    <option value="sem">Não quero pipoca</option>
+                    <option value="p">Pequena</option>
+                    <option value="m">Média</option>
+                    <option value="g">Grande</option>
+                    <option value="xg">Extra Grande</option>
+                </select>
+
+                <label for="refri">Refrigerante: </label>
+                <select name="refri" id="refri" onchange="refrivalor()">
+                    <option value="sem">Não quero refrigerante</option>
+                    <option value="p">Pequeno (350ml)</option>
+                    <option value="m">Médio (500ml)</option>
+                    <option value="g">Grande (750ml)</option>
+                </select> <br> <br>
+
+                <label for="sobremesa">Sobremesas: </label>
+                <input type="checkbox" name="kitkat" onchange="calc(10, this.checked)" id="kitkat"> Kit-Kat
+                <input type="checkbox" name="snickers" onchange="calc(8, this.checked)" id="snickers"> Snickers
+                <input type="checkbox" name="mem" onchange="calc(15, this.checked)" id="mem"> M&M's
+                <br> <br>
+
+                <p id="saida">
+                    R$<output id="total">0</output>
+                </p>
+
+                <section id="botao">
+                    <input type="reset" value="Limpar" class="button limpar">
+                    <input type="submit" value="Comprar" class="button comprar" onclick="compra()">
+                </section>
+
+            </form>
+    </main>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

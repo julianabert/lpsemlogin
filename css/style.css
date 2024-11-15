@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --c01: #1A1A1A;
+    --c02: #0D0D0D;
+    --c03: #E4BD6F;
+    --c04: #BD1A1A;
+    --c05: #fff;
+    --c06: #757575;
+}
+
+body {
+    background-color: var(--c06);
+}
+
+main {
+    width: 650px;
+    height: 850px;
+    border-radius: 20px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: var(--c01);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 2rem;
+    color: var(--c05);
+}
+
+h2 {
+    color: var(--c05);
+    margin-bottom: 5px;
+}
+
+#titulo {
+    margin: 5px;
+    color: var(--c04);
+}
+
+#titulo, output {
+    text-align: center;
+}
+
+span {
+    font-weight: lighter;
+    font-style: italic;
+    color: var(--c04);
+}
+
+#cartaz {
+    width: 500px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.film {
+    transition: 0.5s;
+    transition-duration: s;
+}
+
+.film:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.cartazes {
+    width: 120px;
+    height: 170px;
+    padding: 3px;
+}
+
+#formulario {
+    background-color: var(--c02);
+    width: 600px;
+    height: 520px;
+    padding: 25px;
+    border-radius: 15px;
+    color: var(--c05);
+    margin: auto;
+}
+
+input {
+    margin: 5px;
+}
+
+select {
+    background-color: var(--c01);
+    color: var(--c03);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#ing {
+    background-color: var(--c01);
+    color: var(--c05);
+    border: 0;
+    padding: 3px;
+    border-radius: 5px;
+    outline: solid 0.1px var(--c03);
+}
+
+.button {
+    height: 45px;
+    color: var(--c05);
+    background-color: var(--c04);
+    padding: 15px;
+    border: 0;
+    border-radius: 15px;
+    margin-top: 30px;
+    transition: 0.3s;
+}
+
+#botao {
+    margin-left: 190px;
+}
+
+.limpar {
+    background-color: var(--c03);
+    color: var(--c02);
+}
+
+.limpar:hover {
+    background-color: var(--c01);
+    color: var(--c03);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.comprar:hover {
+    background-color: #8f0707;
+    color: var(--c05);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
